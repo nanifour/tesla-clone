@@ -1,19 +1,17 @@
 import React from 'react'
 import styled from "styled-components"
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade"
 
-{ /* unpacking (object destructuring) the object by adding it to the function */}
-function Section() {
+function Sections({title, description, leftBtnText, rightBtnText, backgroundImg, midBtnText}) {
     return (
-        <Wrap >  
+<Wrap bgImage = {backgroundImg} >  {/* pass in background image */}
             
             {/* fade text */}
             <Fade bottom delay={1}>
                 <ItemText>
                     {/* was props.title before unpacking */}
-                    <h1> Model S </h1>
-                    <p> Order Online for Touchless Delivery</p>
-
+                    <h1> {title} </h1>
+                    <p> {description}</p>
                 </ItemText>
             </Fade>
 
@@ -22,25 +20,41 @@ function Section() {
             <Fade bottom>
                 <ButtonGroup>
                     <Fade left delay={2}>
-                        <LeftButton> Custom Order </LeftButton>
+                    {leftBtnText &&
+                        <LeftButton> 
+                            {leftBtnText} 
+                            </LeftButton>
+                    }
                     </Fade>
                     {/*if right button exists then put it beside the left button */}
                     <Fade right delay={2}>
-                        <RightButton> Existing Inventory </RightButton> 
+                        {rightBtnText && 
+                        <RightButton > 
+                            {rightBtnText}
+                        </RightButton>
+                        } 
+                    </Fade>
+
+                    {/*middle button for accessories*/}
+                    <Fade right delay={2}>
+                        {midBtnText && 
+                        <MidButton > 
+                            {midBtnText}
+                        </MidButton>
+                        } 
                     </Fade>
                 </ButtonGroup>
             </Fade>
 
-            <Fade bottom>
-                <DownArrow src ="/images/down-arrow.svg" />
-            </Fade>
             </BottomContainer>
 
         </Wrap>
     )
 }
 
-export default Section
+export default Sections
+
+
 
 
 /* Styled Componenets */
@@ -56,7 +70,7 @@ const Wrap = styled.div`
     flex-direction: column;
     justify-content: space-between;  //vertical
     align-items: center; 
-   // background-image: ${props => `url("/images/${props.bgImage}")`} ; //pass in background image property
+    background-image: ${props => `url("/images/${props.bgImage}")`} ; //pass in background image property
 `
 const ItemText = styled.div`
     padding-top: 15vh;
@@ -94,15 +108,16 @@ const RightButton = styled(LeftButton) `
     color: black;
 `
 
-/* Bouncing Down Arrow */
-const DownArrow = styled.img `
-    height: 25px;
-    overflow-x: hidden;
-    animation: animateDown infinite 1.5s;
-` 
+/*button for accessories black */
+const MidButton = styled(LeftButton)`
+    background-color: black;
+    color: white;
+    margin-top: 5px; 
+`
 
 /* container to keep arrows and buttons closer together because the wrap is styles space-between */
 
 const BottomContainer = styled.div `
 
 `
+

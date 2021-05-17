@@ -1,20 +1,16 @@
 import React from 'react'
 import styled from "styled-components"
 import Section from "./Section"
+import Sections from "./Sections"
 import Footer from "./Footer"
 
 function Home() {
     return (
         <Container>
-            <Section 
-                title="Model S"
-                description="Order Online for Touchless Delivery"
-                backgroundImg="model-s.jpg"
-                leftBtnText="Custom Order"
-                rightBtnText="Existing Inventory"
-            />
+            {/* First Section: Model S */}
+            < Section />
             {/* Model Y Section*/}
-            <Section 
+            <Sections 
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
                 backgroundImg="model-y.jpg"
@@ -22,7 +18,7 @@ function Home() {
                 rightBtnText="Existing Inventory"      
             /> 
             {/* Model 3 Section*/}
-            <Section 
+            <Sections 
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
                 backgroundImg="model-3.jpg"
@@ -30,7 +26,7 @@ function Home() {
                 rightBtnText="Existing Inventory"            
             /> 
             {/* Model X Section*/}
-            <Section 
+            <Sections 
                 title="Model X"
                 description="Order Online for Touchless Delivery"
                 backgroundImg="model-x.jpg"
@@ -38,7 +34,7 @@ function Home() {
                 rightBtnText="Existing Inventory"              
             /> 
             {/* Solar Panel Section*/}
-            <Section 
+            <Sections 
                 title="Lowest Cost Solar Panels in America"
                 description="Money-back guarantee"
                 backgroundImg="solar-panel.jpg"
@@ -46,7 +42,7 @@ function Home() {
                 rightBtnText="Learn More"              
             /> 
             {/* Solar Roof Section*/}
-            <Section 
+            <Sections 
                 title="Solar for New Roofs"
                 description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
                 backgroundImg="solar-roof.jpg"
@@ -54,11 +50,11 @@ function Home() {
                 rightBtnText="Learn More"             
             /> 
             {/* Accessories Section*/} 
-            <Section 
+            <Sections 
                 title="Accessories"
                 description=""
                 backgroundImg="accessories.jpg"
-                leftBtnText="Shop Now"
+                midBtnText="Shop Now"
             /> 
             <Footer />
             

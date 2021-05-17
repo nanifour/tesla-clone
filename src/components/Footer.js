@@ -27,12 +27,12 @@ function Footer() {
 export default Footer
 
 const Container = styled.div `
-    min-height: 60px;
+    min-height: 45px;
     z-index: 20;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    bottom: 0; //stick it to the top
+    bottom: 0; //stick it to the bottom
     left: 0; //stick it to the left
     right: 0; //stick it to the right
     justify-content: space-between;
