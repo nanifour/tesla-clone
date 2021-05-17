@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
     
       <Header /> 
       <Home />
-
+     {/* <Footer /> */}
     </div>
   );
 }
