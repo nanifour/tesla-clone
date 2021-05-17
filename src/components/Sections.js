@@ -112,7 +112,8 @@ const RightButton = styled(LeftButton) `
 const MidButton = styled(LeftButton)`
     background-color: black;
     color: white;
-    margin-top: 5px; 
+    margin: 70px; 
+    
 `
 
 /* container to keep arrows and buttons closer together because the wrap is styles space-between */

@@ -27,11 +27,11 @@ function Footer() {
 export default Footer
 
 const Container = styled.div `
-    min-height: 45px;
+    min-height: 10px;
     z-index: 20;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    //padding: 0 20px;
     bottom: 0; //stick it to the bottom
     left: 0; //stick it to the left
     right: 0; //stick it to the right
@@ -47,7 +47,7 @@ const Menu = styled.div `
     align-items: center;
     justify-content: center;
     flex: 1; 
-    margin-bottom: 30px;
+    margin-top: -103px;
 
     a{
         font-weight: 500;
