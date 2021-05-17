@@ -75,29 +75,41 @@ const Wrap = styled.div`
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
+
+    h1{
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        color: #5E5C61;
+    }
 `
 
  /* Button components: display flex - left to right*/
 const ButtonGroup = styled.div `
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     //wrap buttons on smaller screen
     @media (max-width: 599px) {
         flex-direction: column;
     }
 `
 const LeftButton = styled.div `
-    background-color: rgba(23,26,32,0.8);
+    background-color: rgba(23,26,30,0.9);
     height: 40px;
     width: 256px;
     color: white;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    opacity: 0.93; 
+    opacity: 0.9; 
     margin: 8px; 
     cursor: pointer;
     //background-color: ${props => props.btnColor || "black"} ;
@@ -112,8 +124,8 @@ const RightButton = styled(LeftButton) `
 const MidButton = styled(LeftButton)`
     background-color: black;
     color: white;
-    margin: 70px; 
-    
+    margin: 50px; 
+    opacity: 1;
 `
 
 /* container to keep arrows and buttons closer together because the wrap is styles space-between */
