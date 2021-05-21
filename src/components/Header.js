@@ -17,7 +17,7 @@ function Header() {
             <Container>
                 {/*logo link */}
                 <a>
-                    <img src="./public/images/logo.svg" alt="logo" />
+                    <img src="../images/logo.svg" alt="logo" />
                 </a> 
                 {/* menu */}
                 <Menu>
