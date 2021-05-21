@@ -17,8 +17,8 @@ function Header() {
             <Container>
                 {/*logo link */}
                 <a>
-                    <img src="./images/logo.svg" alt="logo" />
-                </a>
+                    <img src="./public/images/logo.svg" alt="logo" />
+                </a> 
                 {/* menu */}
                 <Menu>
                     {/* if cars and cars.map give it a car*/}
