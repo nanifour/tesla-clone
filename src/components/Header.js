@@ -5,6 +5,8 @@ import CloseIcon from '@material-ui/icons/Close';
 import { selectCars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';    //react hook
 
+
+
 function Header() {
 
     //Create Use State for hamburger menu open and close
@@ -17,7 +19,9 @@ function Header() {
             <Container>
                 {/*logo link */}
                 <a>
-                    <img src="./images/logo.svg" alt="logo" />
+                    <img src="images/logo.svg" alt="logo" />
+                          {/* Logo is an actual React component
+                        <Logo /> */}
                 </a> 
                 {/* menu */}
                 <Menu>
