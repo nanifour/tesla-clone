@@ -9,7 +9,7 @@ A clone of  Tesla's landing page. This was bootstrapped with [Create React App](
 ![ScreenShot](%PUBLIC_URL%/screenshot.png)
 
 ## Used Technologies & Components
-------------------
+
 - React
 -  React Reveal Module for scrolling animations (Fade effect)
 - Redux 
@@ -21,7 +21,7 @@ A clone of  Tesla's landing page. This was bootstrapped with [Create React App](
 
 
 ## Website structure:
-------------------
+
 - application
     - header
         - logo
