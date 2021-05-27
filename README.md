@@ -3,17 +3,15 @@
 
 <p align="center">
 
-![](https://img.shields.io/github/languages/top/nanifour/tesla-clone?style=flat)        
-[![Demo](https://img.shields.io/badge/Site_Demo-informational?style=flat&logo=github)](https://nanifour.github.io/tesla-clone/)
+![](https://img.shields.io/github/languages/top/nanifour/tesla-clone?style=for-the-badge)        [![Demo](https://img.shields.io/badge/Site_Demo-informational?style=for-the-badge&logo=github)](https://nanifour.github.io/tesla-clone/)
 
 </p>
-
 
 
 A clone of  Tesla's landing page. This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. 
 
 
-![ScreenShot](%PUBLIC_URL%/screenshot.png)
+![ScreenShot](images/tesla-home.png)
 
 ## Used Technologies & Components
 
