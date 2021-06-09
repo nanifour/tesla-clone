@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';    //react hook
 function Header() {
 
     //Create Use State for hamburger menu open and close
-    const [burgerOpen, setburgerOpen] = useState(false); //status is closed
+    const [menuOpen, setmenuOpen] = useState(false); //status is closed
     const cars = useSelector(selectCars);
     console.log(cars);
 
@@ -27,45 +27,45 @@ function Header() {
                 <Menu>
                     {/* if cars and cars.map give it a car*/}
                     {cars && cars.map((car, index) =>(
-                        <a key={index} href="#">{car}</a> 
+                        <a key={index} href="#/">{car}</a> 
                     ))}   
-                    <a href="#">Solar Roof</a>
-                    <a href="#">Solar Panels</a>
+                    <a href="#/">Solar Roof</a>
+                    <a href="#/">Solar Panels</a>
                     
                 </Menu>
 
                 {/* right menu */}
                 <RightMenu>
-                    <a href="#">Shop</a>
-                    <a href="#">Tesla Account</a> 
+                    <a href="#/">Shop</a>
+                    <a href="#/">Tesla Account</a> 
 
-                    <CustomMenu onClick={()=>setburgerOpen(true)} />  
+                    <CustomMenu onClick={()=>setmenuOpen(true)} />  
                 </RightMenu>
 
                 {/* burger nav menu */}
-                <BurgerNav show={burgerOpen}>  {/* show if burger is open or not*/}
+                <MenuNav show={menuOpen}>  {/* show if burger is open or not*/}
 
                     {/* custom div to push the close menu to the right */}
                     <CloseWrapper>
-                        <CustomClose onClick={()=>setburgerOpen(false)}/> {/* when clicked, set burger to close */}
+                        <CustomClose onClick={()=>setmenuOpen(false)}/> {/* when clicked, set burger to close */}
                     </ CloseWrapper>
 
-                    <li><a href="#">Existing Inventory</a></li> 
-                    <li><a href="#">Used Inventory</a></li> 
-                    <li><a href="#">Trade-In</a></li> 
-                    <li><a href="#">CyberTruck</a></li> 
-                    <li><a href="#">Roadster</a></li> 
-                    <li><a href="#">Semi</a></li> 
-                    <li><a href="#">Existing Inventory</a></li> 
-                    <li><a href="#">Charging</a></li> 
-                    <li><a href="#">Powerwall</a></li> 
-                    <li><a href="#">Commercial Energy</a></li>
-                    <li><a href="#">Utilities</a></li> 
-                    <li><a href="#">Test Drive</a></li> 
-                    <li><a href="#">Find Us</a></li> 
-                    <li><a href="#">Support</a></li>  
-                    <li><a href="#">United States</a></li> 
-                </BurgerNav>
+                    <li><a href="#/">Existing Inventory</a></li> 
+                    <li><a href="#/">Used Inventory</a></li> 
+                    <li><a href="#/">Trade-In</a></li> 
+                    <li><a href="#/">CyberTruck</a></li> 
+                    <li><a href="#/">Roadster</a></li> 
+                    <li><a href="#/">Semi</a></li> 
+                    <li><a href="#/">Existing Inventory</a></li> 
+                    <li><a href="#/">Charging</a></li> 
+                    <li><a href="#/">Powerwall</a></li> 
+                    <li><a href="#/">Commercial Energy</a></li>
+                    <li><a href="#/">Utilities</a></li> 
+                    <li><a href="#/">Test Drive</a></li> 
+                    <li><a href="#/">Find Us</a></li> 
+                    <li><a href="#/">Support</a></li>  
+                    <li><a href="#/">United States</a></li> 
+                </MenuNav>
 
 
             </Container>
@@ -147,7 +147,7 @@ const CustomClose = styled(CloseIcon)`
 `
 
 //burger nav original orientation
-const BurgerNav = styled.div `
+const MenuNav = styled.div `
     font-weight: 500;
     list-style: none;
     background-color: white;
