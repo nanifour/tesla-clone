@@ -64,7 +64,7 @@ function Home() {
 
 export default Home
 
-{/* Style this specific div in js instead of css*/}
+//Style this specific div in js instead of css
 
 const Container = styled.div`
     height: 100vh;

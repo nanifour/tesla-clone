@@ -7,14 +7,13 @@ function Footer() {
             <Container>
             <Menu>
                     {/* footer menu*/}
-                    <a href="#">Tesla © 2021</a>
-                    <a href="#">Privacy & Legal</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Get Newsletter</a>
-                    <a href="#">News</a>
-                    <a href="#">Forums</a>
-                    <a href="#">Locations</a>
+                    <a href="#/">Tesla © 2021</a>
+                    <a href="#/">Privacy & Legal</a>
+                    <a href="#/">Contact</a>
+                    <a href="#/">Careers</a>
+                    <a href="#/">Get Newsletter</a>
+                    <a href="#/">Forums</a>
+                    <a href="#/">Locations</a>
                     
             </Menu>
 
