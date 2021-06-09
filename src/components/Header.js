@@ -17,9 +17,9 @@ function Header() {
     return (
         <div>
             <Container>
-                {/*logo link */}
+
                 <a>
-                    <img src="images/logo.svg" alt="logo" />
+                    <img src="logo.svg" alt="logo" />
                           {/* Logo is an actual React component
                         <Logo /> */}
                 </a> 
