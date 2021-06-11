@@ -11,7 +11,7 @@
 A clone of  Tesla's landing page. This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. 
 
 
-![ScreenShot](image/tesla-home.png)
+![ScreenShot](src/images/tesla-home.png)
 
 ## Used Technologies & Components
 
