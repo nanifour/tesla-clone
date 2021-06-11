@@ -3,6 +3,13 @@ import styled from "styled-components"
 import Section from "./Section"
 import Sections from "./Sections"
 import Footer from "./Footer"
+import modelY from '../assets/images/model-y.jpg';
+import modelThree from '../assets/images/model-3.jpg';
+import modelX from '../assets/images/model-x.jpg';
+import solarPanel from '../assets/images/solar-panel.jpg';
+import solarRoof from '../assets/images/solar-roof.jpg';
+import accessories from '../assets/images/accessories.jpg';
+
 
 function Home() {
     return (
@@ -13,7 +20,7 @@ function Home() {
             <Sections 
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-y.jpg"
+                backgroundImg={modelY}
                 leftBtnText="Custom Order"
                 rightBtnText="Existing Inventory"      
             /> 
@@ -21,7 +28,7 @@ function Home() {
             <Sections 
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-3.jpg"
+                backgroundImg={modelThree}
                 leftBtnText="Custom Order"
                 rightBtnText="Existing Inventory"            
             /> 
@@ -29,7 +36,7 @@ function Home() {
             <Sections 
                 title="Model X"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-x.jpg"
+                backgroundImg={modelX}
                 leftBtnText="Custom Order"
                 rightBtnText="Existing Inventory"              
             /> 
@@ -37,7 +44,7 @@ function Home() {
             <Sections 
                 title="Lowest Cost Solar Panels in America"
                 description="Money-back guarantee"
-                backgroundImg="solar-panel.jpg"
+                backgroundImg={solarPanel}
                 leftBtnText="Order Now"
                 rightBtnText="Learn More"              
             /> 
@@ -45,7 +52,7 @@ function Home() {
             <Sections 
                 title="Solar for New Roofs"
                 description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
-                backgroundImg="solar-roof.jpg"
+                backgroundImg={solarRoof}
                 leftBtnText="Order Now"
                 rightBtnText="Learn More"             
             /> 
@@ -53,7 +60,7 @@ function Home() {
             <Sections 
                 title="Accessories"
                 description=""
-                backgroundImg="accessories.jpg"
+                backgroundImg={accessories}
                 midBtnText="Shop Now"
             /> 
             <Footer />

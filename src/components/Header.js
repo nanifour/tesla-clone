@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import styled from "styled-components";
-import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { selectCars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';    //react hook
-
+import logo from '../assets/images/logo.svg';
 
 
 function Header() {
@@ -18,10 +17,9 @@ function Header() {
         <div>
             <Container>
 
+
                 <a>
-                    <img src="logo.svg" alt="logo" />
-                          {/* Logo is an actual React component
-                        <Logo /> */}
+                    <img alt="logo" src={logo}></img>
                 </a> 
                 {/* menu */}
                 <Menu>
@@ -36,10 +34,12 @@ function Header() {
 
                 {/* right menu */}
                 <RightMenu>
-                    <a href="#/">Shop</a>
-                    <a href="#/">Tesla Account</a> 
+                    <a class="right-menu" href="#/">Shop</a>
+                    <a class="right-menu" href="#/">Account</a> 
 
-                    <CustomMenu onClick={()=>setmenuOpen(true)} />  
+                    <CustomMenu onClick={()=>setmenuOpen(true)}>  
+                        Menu
+                    </CustomMenu>
                 </RightMenu>
 
                 {/* burger nav menu */}
@@ -56,7 +56,6 @@ function Header() {
                     <li><a href="#/">CyberTruck</a></li> 
                     <li><a href="#/">Roadster</a></li> 
                     <li><a href="#/">Semi</a></li> 
-                    <li><a href="#/">Existing Inventory</a></li> 
                     <li><a href="#/">Charging</a></li> 
                     <li><a href="#/">Powerwall</a></li> 
                     <li><a href="#/">Commercial Energy</a></li>
@@ -103,8 +102,7 @@ const Menu = styled.div `
     a{
         font-weight: 600;
         font-size: 15px;
-        text-transform: uppercase;
-        padding: 0 10px;
+        padding: 0 18px;
         flex-wrap: nowrap;
         color: black;
     }
@@ -123,19 +121,38 @@ const RightMenu = styled.div `
         color: black;
         font-weight: 600;
         font-size: 16px;
-        text-transform: uppercase;
         margin-right: 10px;
-        color: black;
+        padding: 0px 10px;
 
         @media (max-width: 1198px) {
         display: none;
-    }
+        }
+
+        &:hover {
+            background-color: rgba(23,26,30,0.07);
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+
     }
 
+
 `
-//menu hamburger
-const CustomMenu = styled(MenuIcon)`
+
+//right opening menu
+const CustomMenu = styled.div`
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
     cursor: pointer;
+
+    &:hover {
+            background-color: rgba(23,26,30,0.07);
+            padding: 8px;
+            border-radius: 15px;
+
+        }
 
 `
 
@@ -148,7 +165,7 @@ const CustomClose = styled(CloseIcon)`
 
 //burger nav original orientation
 const MenuNav = styled.div `
-    font-weight: 500;
+    font-weight: 600;
     list-style: none;
     background-color: white;
     position: fixed; //always on the top right side
@@ -157,7 +174,7 @@ const MenuNav = styled.div `
     right: 0;
     width: 310px;
     z-index: 10;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -173,13 +190,11 @@ const MenuNav = styled.div `
 
     li{
         padding: 14px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        text-transform: uppercase;
     }
 
     a{
         color: black;
-        font-size: 16px;
+        font-size: 15px;
     }
 
 `

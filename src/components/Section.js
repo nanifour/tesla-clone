@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
 import Fade from 'react-reveal/Fade';
-
+import downArrow from '../assets/images/down-arrow.svg';
+import modelS from '../assets/images/model-s.jpg';
 
 function Section() {
     return (
@@ -32,7 +33,8 @@ function Section() {
             </Fade>
 
             <Fade bottom>
-                <DownArrow src ="images/down-arrow.svg" />
+                <DownArrow  src={downArrow}/>
+                
             </Fade>
             </BottomContainer>
 
@@ -51,7 +53,7 @@ const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('images/model-s.jpg');
+    background-image: url(${modelS});
     display: flex;
     flex-direction: column;
     justify-content: space-between;  //vertical
