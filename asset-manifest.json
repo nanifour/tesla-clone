@@ -1,20 +1,29 @@
 {
   "files": {
     "main.css": "/tesla-clone/static/css/main.eda81e9e.chunk.css",
-    "main.js": "/tesla-clone/static/js/main.c8321c7d.chunk.js",
-    "main.js.map": "/tesla-clone/static/js/main.c8321c7d.chunk.js.map",
+    "main.js": "/tesla-clone/static/js/main.c2b17eba.chunk.js",
+    "main.js.map": "/tesla-clone/static/js/main.c2b17eba.chunk.js.map",
     "runtime-main.js": "/tesla-clone/static/js/runtime-main.32526b21.js",
     "runtime-main.js.map": "/tesla-clone/static/js/runtime-main.32526b21.js.map",
-    "static/js/2.d76d55c0.chunk.js": "/tesla-clone/static/js/2.d76d55c0.chunk.js",
-    "static/js/2.d76d55c0.chunk.js.map": "/tesla-clone/static/js/2.d76d55c0.chunk.js.map",
+    "static/js/2.216bb74a.chunk.js": "/tesla-clone/static/js/2.216bb74a.chunk.js",
+    "static/js/2.216bb74a.chunk.js.map": "/tesla-clone/static/js/2.216bb74a.chunk.js.map",
     "index.html": "/tesla-clone/index.html",
     "static/css/main.eda81e9e.chunk.css.map": "/tesla-clone/static/css/main.eda81e9e.chunk.css.map",
-    "static/js/2.d76d55c0.chunk.js.LICENSE.txt": "/tesla-clone/static/js/2.d76d55c0.chunk.js.LICENSE.txt"
+    "static/js/2.216bb74a.chunk.js.LICENSE.txt": "/tesla-clone/static/js/2.216bb74a.chunk.js.LICENSE.txt",
+    "static/media/accessories.027ada94.jpg": "/tesla-clone/static/media/accessories.027ada94.jpg",
+    "static/media/down-arrow.74bc9414.svg": "/tesla-clone/static/media/down-arrow.74bc9414.svg",
+    "static/media/logo.a7b59bc6.svg": "/tesla-clone/static/media/logo.a7b59bc6.svg",
+    "static/media/model-3.30651f79.jpg": "/tesla-clone/static/media/model-3.30651f79.jpg",
+    "static/media/model-s.0d203c30.jpg": "/tesla-clone/static/media/model-s.0d203c30.jpg",
+    "static/media/model-x.25937b94.jpg": "/tesla-clone/static/media/model-x.25937b94.jpg",
+    "static/media/model-y.30acb76a.jpg": "/tesla-clone/static/media/model-y.30acb76a.jpg",
+    "static/media/solar-panel.d7d441d7.jpg": "/tesla-clone/static/media/solar-panel.d7d441d7.jpg",
+    "static/media/solar-roof.acfd9045.jpg": "/tesla-clone/static/media/solar-roof.acfd9045.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.32526b21.js",
-    "static/js/2.d76d55c0.chunk.js",
+    "static/js/2.216bb74a.chunk.js",
     "static/css/main.eda81e9e.chunk.css",
-    "static/js/main.c8321c7d.chunk.js"
+    "static/js/main.c2b17eba.chunk.js"
   ]
 }
