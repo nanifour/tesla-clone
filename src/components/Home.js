@@ -15,7 +15,7 @@ function Home() {
     return (
         <Container>
             {/* First Section: Model S */}
-            < Section />
+            < Section/>
             {/* Model Y Section*/}
             <Sections 
                 title="Model Y"

@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';    //react hook
 import logo from '../assets/images/logo.svg';
 
 
+
 function Header() {
 
     //Create Use State for hamburger menu open and close
@@ -18,7 +19,7 @@ function Header() {
             <Container>
 
 
-                <a>
+                <a href="/Home">
                     <img alt="logo" src={logo}></img>
                 </a> 
                 {/* menu */}
@@ -34,12 +35,14 @@ function Header() {
 
                 {/* right menu */}
                 <RightMenu>
+                    
                     <a class="right-menu" href="#/">Shop</a>
                     <a class="right-menu" href="#/">Account</a> 
 
                     <CustomMenu onClick={()=>setmenuOpen(true)}>  
                         Menu
                     </CustomMenu>
+
                 </RightMenu>
 
                 {/* burger nav menu */}
@@ -102,14 +105,20 @@ const Menu = styled.div `
     a{
         font-weight: 600;
         font-size: 15px;
-        padding: 0 18px;
+        padding: 9px 18px;
         flex-wrap: nowrap;
         color: black;
+
+        &:hover {
+            background-color: rgba(23,26,30,0.07);
+            border-radius: 15px;
+        }
     }
 
     @media (max-width: 1200px) {
         display: none;
     }
+
 
 `
 //right menu
@@ -121,8 +130,8 @@ const RightMenu = styled.div `
         color: black;
         font-weight: 600;
         font-size: 16px;
-        margin-right: 10px;
-        padding: 0px 10px;
+        margin-right: 13px;
+        padding: 9px 13px;
 
         @media (max-width: 1198px) {
         display: none;
@@ -130,9 +139,7 @@ const RightMenu = styled.div `
 
         &:hover {
             background-color: rgba(23,26,30,0.07);
-            padding: 10px;
-            border-radius: 15px;
-
+            border-radius: 13px;
         }
 
     }
@@ -146,12 +153,11 @@ const CustomMenu = styled.div`
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    padding: 9px 13px;
 
     &:hover {
             background-color: rgba(23,26,30,0.07);
-            padding: 8px;
             border-radius: 15px;
-
         }
 
 `
