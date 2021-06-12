@@ -4,7 +4,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { selectCars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';    //react hook
 import logo from '../assets/images/logo.svg';
-
+import LanguageIcon from '@material-ui/icons/Language';
 
 
 function Header() {
@@ -50,23 +50,35 @@ function Header() {
 
                     {/* custom div to push the close menu to the right */}
                     <CloseWrapper>
-                        <CustomClose onClick={()=>setmenuOpen(false)}/> {/* when clicked, set burger to close */}
+                        <CustomClose style={{ fontSize: 30 }} onClick={()=>setmenuOpen(false)}/> {/* when clicked, set burger to close */}
                     </ CloseWrapper>
 
-                    <li><a href="#/">Existing Inventory</a></li> 
-                    <li><a href="#/">Used Inventory</a></li> 
-                    <li><a href="#/">Trade-In</a></li> 
-                    <li><a href="#/">CyberTruck</a></li> 
-                    <li><a href="#/">Roadster</a></li> 
-                    <li><a href="#/">Semi</a></li> 
-                    <li><a href="#/">Charging</a></li> 
-                    <li><a href="#/">Powerwall</a></li> 
-                    <li><a href="#/">Commercial Energy</a></li>
-                    <li><a href="#/">Utilities</a></li> 
-                    <li><a href="#/">Test Drive</a></li> 
-                    <li><a href="#/">Find Us</a></li> 
-                    <li><a href="#/">Support</a></li>  
-                    <li><a href="#/">United States</a></li> 
+                    <div className="toggleList">
+
+                        <div className="cars">     
+                        {/* if cars and cars.map give it a car*/}
+                        {cars && cars.map((car, index) =>(
+                            <li><a key={index} href="#/">{car}</a></li>
+                        ))} 
+                        </div>
+
+                        <li><a href="#/">Existing Inventory</a></li> 
+                        <li><a href="#/">Used Inventory</a></li> 
+                        <li><a href="#/">Trade-In</a></li> 
+                        <li><a href="#/">CyberTruck</a></li> 
+                        <li><a href="#/">Roadster</a></li> 
+                        <li><a href="#/">Semi</a></li> 
+                        <li><a href="#/">Charging</a></li> 
+                        <li><a href="#/">Powerwall</a></li> 
+                        <li><a href="#/">Commercial Energy</a></li>
+                        <li><a href="#/">Utilities</a></li> 
+                        <li><a href="#/">Test Drive</a></li> 
+                        <li><a href="#/">Find Us</a></li> 
+                        <li><a href="#/">Support</a></li>  
+                        <li><a href="#/"><LanguageIcon/>United States</a></li> 
+
+                    </div>
+                    
                 </MenuNav>
 
 
@@ -133,7 +145,7 @@ const RightMenu = styled.div `
         margin-right: 13px;
         padding: 9px 13px;
 
-        @media (max-width: 1198px) {
+        @media (max-width: 1199px) {
         display: none;
         }
 
@@ -153,12 +165,17 @@ const CustomMenu = styled.div`
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-    padding: 9px 13px;
+    padding: 9px 13px;  
 
     &:hover {
             background-color: rgba(23,26,30,0.07);
             border-radius: 15px;
         }
+
+    @media (max-width: 1199px) {
+        background-color: rgba(23,26,30,0.07);
+        border-radius: 15px;
+    }
 
 `
 
@@ -166,6 +183,7 @@ const CustomMenu = styled.div`
 //close hambuger nav
 const CustomClose = styled(CloseIcon)`
     cursor: pointer;
+    
 
 `
 
@@ -178,7 +196,7 @@ const MenuNav = styled.div `
     top: 0;
     bottom: 0;
     right: 0;
-    width: 310px;
+    width: 25rem;
     z-index: 10;
     padding: 10px;
     display: flex;
@@ -187,21 +205,32 @@ const MenuNav = styled.div `
     overflow-y: auto;
 
     transform: ${ props => props.show ? 'translateX(0)' : 'translateX(100%)' }; //if its false, movve menu to the right and if its true then do not move menu
-    transition: transform 0.2s;
+    transition: transform 0.7s;
 
-    ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+
+    .toggleList{
+        margin-top: 37px;
+        margin-left: 12px;
     }
 
     li{
-        padding: 14px 0;
+        padding: 9px 40px ;
+        padding-left: 15px;
+
+        &:hover {
+            background-color: rgba(23,26,30,0.07);
+            border-radius: 15px;
+            transition: 1s ease-in;
+        }
+
     }
 
     a{
-        color: black;
+        color: #3b3e43;
         font-size: 15px;
+
     }
+
 
 `
 
@@ -209,6 +238,7 @@ const MenuNav = styled.div `
 const CloseWrapper = styled.div `
     display: flex;
     justify-content: flex-end;
+
 `
 
 
