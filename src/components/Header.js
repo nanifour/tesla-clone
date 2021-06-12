@@ -50,17 +50,21 @@ function Header() {
 
                     {/* custom div to push the close menu to the right */}
                     <CloseWrapper>
-                        <CustomClose style={{ fontSize: 30 }} onClick={()=>setmenuOpen(false)}/> {/* when clicked, set burger to close */}
+                        <div class="close-button">
+                            <CustomClose style={{ fontSize: 30 }} onClick={()=>setmenuOpen(false)}/> {/* when clicked, set burger to close */}
+                        </div>
                     </ CloseWrapper>
 
                     <div className="toggleList">
 
-                        <div className="cars">     
+                        <CarList>     
                         {/* if cars and cars.map give it a car*/}
                         {cars && cars.map((car, index) =>(
                             <li><a key={index} href="#/">{car}</a></li>
                         ))} 
-                        </div>
+                        <li><a href="#/">Solar Roof</a></li>
+                        <li><a href="#/">Solar Panels</a></li>
+                        </CarList>
 
                         <li><a href="#/">Existing Inventory</a></li> 
                         <li><a href="#/">Used Inventory</a></li> 
@@ -179,10 +183,21 @@ const CustomMenu = styled.div`
 
 `
 
+//add cars as when screen size gets smaller
+const CarList = styled.div`
+
+    @media (min-width: 1199px) {
+        display: none;
+    }
+
+`
+
+
 
 //close hambuger nav
 const CustomClose = styled(CloseIcon)`
     cursor: pointer;
+    
     
 
 `
@@ -204,13 +219,16 @@ const MenuNav = styled.div `
     text-align: start;
     overflow-y: auto;
 
-    transform: ${ props => props.show ? 'translateX(0)' : 'translateX(100%)' }; //if its false, movve menu to the right and if its true then do not move menu
+
+    transform: ${ props => props.show ? 'translateX(0)' : 'translateX(100%)' }; //if its false, move menu to the right and if its true then do not move menu
     transition: transform 0.7s;
 
 
     .toggleList{
-        margin-top: 37px;
+        margin-top: 20px;
         margin-left: 12px;
+        margin-bottom: 100px;
+
     }
 
     li{
@@ -227,10 +245,13 @@ const MenuNav = styled.div `
 
     a{
         color: #3b3e43;
-        font-size: 15px;
+        font-size: 14px;
 
     }
 
+    
+ 
+  
 
 `
 
@@ -238,6 +259,16 @@ const MenuNav = styled.div `
 const CloseWrapper = styled.div `
     display: flex;
     justify-content: flex-end;
+
+    .close-button{
+        padding: 8px 8px 4px 8px;
+
+        &:hover {
+            background-color: rgba(23,26,30,0.07);
+            border-radius: 50%;
+        }
+    }
+
 
 `
 
