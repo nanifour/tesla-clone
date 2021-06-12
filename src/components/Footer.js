@@ -5,17 +5,19 @@ function Footer() {
     return (
         <div>
             <Container>
-            <Menu>
-                    {/* footer menu*/}
-                    <a href="#/">Tesla © 2021</a>
-                    <a href="#/">Privacy & Legal</a>
-                    <a href="#/">Contact</a>
-                    <a href="#/">Careers</a>
-                    <a href="#/">Get Newsletter</a>
-                    <a href="#/">Forums</a>
-                    <a href="#/">Locations</a>
-                    
-            </Menu>
+
+                <Menu>
+                    <ul>
+                        {/* footer menu*/}
+                        <li><a href="#/">Tesla © 2021</a></li>
+                        <li><a href="#/">Privacy & Legal</a></li>
+                        <li><a href="#/">Contact</a></li>
+                        <li><a href="#/">Careers</a></li>
+                        <li><a href="#/">Get Newsletter</a></li>
+                        <li><a href="#/">Forums</a></li>
+                        <li><a href="#/">Locations</a></li>
+                    </ul>
+                </Menu>
 
             </Container>
             
@@ -48,11 +50,18 @@ const Menu = styled.div `
     flex: 1; 
     margin-top: -103px;
 
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+
     a{
         font-weight: 500;
         font-size: 13px;
         padding: 0 10px;
-        flex-wrap: nowrap;
+        //flex-wrap: nowrap;
 
     }
 
