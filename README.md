@@ -4,7 +4,7 @@
 ![](https://img.shields.io/github/languages/top/nanifour/tesla-clone?style=for-the-badge)        [![Demo](https://img.shields.io/badge/Demo-informational?style=for-the-badge&logo=github)](https://nanifour.github.io/tesla-clone/)
 
 
-A clone of  Tesla's landing page. This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. The website is fully responsive.
+React application that mimics Tesla's landing page. This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. The website is fully responsive.
 
 >Landing page
 ![ScreenShot](src/assets/images/tesla-home.png)
