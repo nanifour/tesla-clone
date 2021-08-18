@@ -1,21 +1,26 @@
+<div align="center">
+<h1>React Tesla Clone :car: </h1>
 
-<h1 align="center">Tesla Landing Page Clone :car: </h1>
+![](https://img.shields.io/github/languages/top/nanifour/tesla-clone?style=for-the-badge)  [![Deployed Site](https://img.shields.io/badge/Demo-informational?style=for-the-badge&logo=github)](https://nanifour.github.io/tesla-clone/)
+</div>
 
-![](https://img.shields.io/github/languages/top/nanifour/tesla-clone?style=for-the-badge)        [![Demo](https://img.shields.io/badge/Demo-informational?style=for-the-badge&logo=github)](https://nanifour.github.io/tesla-clone/)
+This is a front-end application that mimics Tesla's landing page. It was built with React + Redux. The website is fully responsive.
 
+## 2 Screenshots
 
-React application that mimics Tesla's landing page. This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. The website is fully responsive.
-
+UI-wise this application looks like the original Tesla Landing Page with the exception of the scroll feature
 >Landing page
 ![ScreenShot](src/assets/images/tesla-home.png)
 
 >Right menu opened
 ![ScreenShot](src/assets/images/right-menu.png)
 
----
-### Technologies & Components Used :toolbox:
+
+## 3 Technologies & Components Used :toolbox:
 
     - ReactJS
+    
+    - CSS 
 
     -  React Reveal Module for scrolling animations (Fade effect)
  
@@ -25,9 +30,9 @@ React application that mimics Tesla's landing page. This was bootstrapped with [
     - Material Ui for icons
         
 
----
 
-### Website structure :construction_worker:
+
+## 4 Website structure :construction_worker:
 
  - **Application**
     - Header
